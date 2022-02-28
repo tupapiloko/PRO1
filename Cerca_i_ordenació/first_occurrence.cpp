@@ -22,4 +22,18 @@ int first_occurrence(double x, const std::vector<double>& v) {
     
 }
 
+int main() {
+    int n; 
+    
+    std::cin >> n; 
+    
+    std::vector<double> v(n); 
+    
+    for(int i = 0; i < n; i++) {
+        std::cin >> v[i]; 
+    }
+    double x;
+    std::cin >> x; 
+    std::cout << first_occurrence(x, v) << std::endl; 
+}
 
